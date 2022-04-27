@@ -2,7 +2,7 @@
 
 
 double calculateArea(double height, double base) {
-  double area = (height * base);
+  double area = (height * base) / 2;
   // check if area has decimals
   if (area.toString().contains('.')) {
     // if so, lets round it to 2 decimals
