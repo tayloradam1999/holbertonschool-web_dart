@@ -5,5 +5,5 @@ void main() {
   var n = 3.14159265359;
   String inString = n.toStringAsFixed(2);
   double outDouble = double.parse(inString);
-  print('Double: $outDouble');
+  print('Double: $outDouble\n');
 }
