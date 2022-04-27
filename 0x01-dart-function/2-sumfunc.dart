@@ -19,10 +19,10 @@ int sub(int a, int b) {
 }
 
 
-// Function: fact()
+// Function: showFunc()
 // Args: int a, int b
 // Return: String
 // Description: show the result of add() and sub()
-String fact(int a, int b) {
+String showFunc(int a, int b) {
   return "Add ${a} + ${b} = ${add(a, b)}\nSub ${a} - ${b} = ${sub(a, b)}";
 }
