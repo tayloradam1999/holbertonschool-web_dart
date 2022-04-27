@@ -4,9 +4,9 @@
 
 void main(List<String> args) {
   // convert input argument to int
-  int score = int.parse(args[0]);
+  int nb = int.parse(args[0]);
   // check if score is greater or equal to 80
-  assert(score >= 80, 'The score must be bigger or equal to 80');
+  assert(nb >= 80, 'The score must be bigger or equal to 80');
   // print 'You Passed' if score is greater or equal to 80
   print('You Passed');
 }
