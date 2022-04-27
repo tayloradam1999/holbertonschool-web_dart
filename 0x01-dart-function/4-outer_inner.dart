@@ -11,7 +11,9 @@ void outer(String name, String id) {
   // Return: String
   // Inner function
   String inner(String name, String id) {
-    return "Hello ${name} your id is ${id}";
+    String firstName = name.split(" ")[0];
+    String lastNameFirstChar = name.split(" ")[1].split("")[0];
+    return "Hello Agent $lastNameFirstChar.${firstName} your id is $id";
   }
   print(inner(name, id));
 }
