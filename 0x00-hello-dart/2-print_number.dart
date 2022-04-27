@@ -7,5 +7,5 @@ import 'dart:io';
 void main() {
   var number = 98;
   stdout.write('$number');
-  print(' Battery street');
+  print(' Battery street\n');
 }
