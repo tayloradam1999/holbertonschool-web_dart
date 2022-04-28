@@ -9,14 +9,13 @@ class User {
   double height = 0.0;
 
   // constructor
-  User({this.name, this.age, this.height});
+  User({required this.name, required this.age, required this.height});
 
   // methods
   String showName() {
     return "Hello $name";
   }
 
-  // toJson method
   Map<String, dynamic> toJson() {
     return {
       'name': name,
