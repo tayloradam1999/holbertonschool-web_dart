@@ -1,4 +1,4 @@
-// Create a User class.
+// Create a User and Password class.
 
 
 // User class that has name as String, age as Integer, and height as double.
