@@ -5,10 +5,10 @@
 // User class that has name as String, age as Integer, and height as double.
 class User {
   // properties
+  int id = 0;
   String name = "";
   int age = 0;
   double height = 0.0;
-  int id = 0;
 
   // constructor
   User({required this.id, required this.name, required this.age, required this.height});
@@ -21,20 +21,20 @@ class User {
   // instance method fromJson()
   static User fromJson(Map<dynamic, dynamic> userJson) {
     return User(
+      id: userJson['id'],
       name: userJson['name'],
       age: userJson['age'],
       height: userJson['height'],
-      id: userJson['id']
     );
   }
 
   // instance method toJson()
   Map<String, dynamic> toJson() {
     return {
+      'id': id,
       'name': name,
       'age': age,
       'height': height,
-      'id': id
     };
   }
 
