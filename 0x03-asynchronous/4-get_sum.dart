@@ -5,8 +5,10 @@ import 'dart:convert';
 
 Future<double> calculateTotal() async {
   try {
+    // await is ONLY used in this function to wait for the return of
+    // functions from 4-main.dart
+
     // gets user data by calling fetchUserData
-    // awa
     final Map<String, dynamic> userData = json.decode(await fetchUserData());
     // gets user's orders by calling fetchCart with id
     final String id = userData['id'];
