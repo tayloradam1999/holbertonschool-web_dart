@@ -21,6 +21,6 @@ Future<String> generateQuote(id) async {
     return '$charName: $quote';
   } catch (e) {
     // print error
-    print('There is no quotes');
+    return('There is no quotes');
   }
 }
