@@ -6,7 +6,8 @@ import 'dart:convert';
 Future<double> calculateTotal() async {
   try {
     // gets user data by calling fetchUserData
-    final Map<String, dynamic> userData = await json.decode(await fetchUserData());
+    // awa
+    final Map<String, dynamic> userData = json.decode(await fetchUserData());
     // gets user's orders by calling fetchCart with id
     final String id = userData['id'];
     final List<dynamic> userOrders = json.decode(await fetchUserOrders(id));
