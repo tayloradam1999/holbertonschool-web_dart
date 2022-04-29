@@ -10,8 +10,7 @@ Future<String> generateQuote(id) async {
     // fetch data from url
     // Uri is from dart:core
     final response = await http.get(
-      Uri.https('breakingbadapi.com', '/api/quotes/$id'),
-      headers: {'Content-Type': 'application/json'},
+      Uri.parse('https://breakingbadapi.com/api/quotes/$id'),
     );
     // decode json data
     final jsonData = json.decode(response.body);
