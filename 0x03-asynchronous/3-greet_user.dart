@@ -7,8 +7,8 @@ import 'dart:convert';
 
 Future<String> greetUser() async {
   try {
-    final String user = await fetchUserData();
-    return 'Hello ${jsonDecode(user)['username']}';
+    final Map<String, dynamic> user = await json.decode(await fetchUserData());
+    return 'Hello ${user['username']}';
   } catch (e) {
     print('error caught: $e');
     return 'error caught: $e';
