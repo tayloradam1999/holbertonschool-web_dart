@@ -21,6 +21,7 @@ int whoWins(Map<String, int> team1, Map<String, int> team2) {
   });
   // check if team1Points is greater than team2Points
   if (team1Points > team2Points) return 1;
-  else if (team1Points < team2Points) return 2;
-  else return 0;
+  if (team1Points < team2Points) return 2;
+  if (team1Points == team2Points) return 0;
+  return 0;
 }
