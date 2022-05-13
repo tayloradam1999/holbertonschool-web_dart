@@ -28,7 +28,6 @@ Future<String> loginUser() async {
       return 'Wrong credentials';
     }
   } catch (e) {
-    print('error caught: $e');
     return 'error caught: $e';
   }
 }
