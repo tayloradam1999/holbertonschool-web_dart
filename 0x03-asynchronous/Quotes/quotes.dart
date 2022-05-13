@@ -14,7 +14,7 @@ Future<String> generateQuote(id) async {
     // decode json data
     var jsonData = json.decode(response.body);
     // return the quote
-    return jsonData[0]['author'] + ': ' + jsonData[0]['quote'];
+    return jsonData[0]['author'] + ' : ' + jsonData[0]['quote'];
   } catch (e) {
     // print error
     return('There is no quotes');
