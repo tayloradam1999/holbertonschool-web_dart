@@ -17,6 +17,6 @@ Future<String> generateQuote(id) async {
     return jsonData[0]['author'] + ' : ' + jsonData[0]['quote'];
   } catch (e) {
     // print error
-    return('There is no quotes');
+    return('There are no quotes');
   }
 }
